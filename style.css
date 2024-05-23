@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Poiret One", sans-serif;
+}
+
+header,
+main,
+footer {
+	width: 768px;
+	margin: 15px auto;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Pacifico", cursive;
+	font-size: 38px;
+	background: #121fcf;
+	/* Разберись сам, как это работает :)
+	   Цвета можно подобрать свои :) */
+	background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+header img {
+	height: 70px;
+}
+
+footer p {
+	font-size: 12px;
+}
+

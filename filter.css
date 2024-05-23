@@ -1,0 +1,62 @@
+body{
+	background-image: url(panoramic-view-sunset.jpg);
+	background-size: cover;
+}
+
+ul {
+	display: flex;
+}
+
+ul li a {
+	text-decoration: none;
+	list-style-type: none;
+	margin-right: 30px;
+}
+a{
+	border:1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	text-decoration: none;
+	list-style-type: none;
+	background-color: aqua;
+	margin-left: 30px;
+}
+img{
+	margin-left: 30px;
+}
+.filter1 {
+	filter: blur(2px);} 
+.filter2 {
+	filter: brightness(50%);    
+} 
+.filter3 {
+	filter: grayscale(100%);
+} 
+.filter4 {
+	filter: contrast(150%);    
+} 
+.filter5 {
+	filter: hue-rotate(90deg);
+} 
+.filter6 {
+	filter: invert(100%);    
+} 
+.filter7 {
+	filter: opacity(50%);
+} 
+.filter8{
+	filter: drop-shadow(30px 10px 20px black);
+}
+.filter9 {
+	filter: opacity(50%) brightness(90%);
+    
+} 
+.filter10 {
+	filter: opacity(50%) drop-shadow(30px 10px 20px black) contrast(150%);
+    
+} 
+
+
+/* И так далее! 
+Если все фильтры уже придумал, не забудь настроить красивые анимации 
+и режим адаптивности для нашего проекта :) */

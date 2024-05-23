@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gg</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="filter.css">
+</head>
+
+<body>
+	<header>
+	
+	</header>
+	<main>
+		<ul>
+			<li><a href="#" id="btn1">Style 1</a></li>
+			<li><a href="#" id="btn2">Style 2</a></li>
+			<li><a href="#" id="btn3">Style 3</a></li>
+			<li><a href="#" id="btn4">Style 4</a></li>
+			<li><a href="#" id="btn10">Style 5</a></li>
+		</ul>
+		<ul>
+			<li><a href="#" id="btn5">Style 6</a></li>
+			<li><a href="#" id="btn6">Style 7</a></li>
+			<li><a href="#" id="btn7">Style 8</a></li>
+			<li><a href="#" id="btn8">Style 9</a></li>
+			<li><a href="#" id="btn9">Style 10</a></li>
+		</ul>
+		<img src="52.avif" alt="фото" id="photo">
+	</main>
+	<footer>
+		<p>made with ♥︎ by my</p>
+	</footer>
+
+	<script>
+		/* ПОЖАЛУЙСТА, НИЧЕГО НЕ МЕНЯЙ! УЖЕ ВСЁ ГОТОВО И РАБОТАЕТ :) */
+		const photo = document.getElementById("photo");
+
+		const filters = [
+			"filter1",
+			"filter2",
+			"filter3",
+			"filter4",
+			"filter5",
+			"filter6",
+			"filter7",
+			"filter8",
+			"filter9",
+			"filter10"
+		];
+
+		function applyFilter(filterName) {
+			filters.forEach(filter => {
+				if (filter === filterName) {
+					photo.classList.add(filter);
+				} else {
+					photo.classList.remove(filter);
+				}
+			});
+		}
+
+		for (let i = 1; i <= 8; i++) {
+			const button = document.getElementById(`btn${i}`);
+			button.addEventListener("click", () => {
+				applyFilter(`filter${i}`);
+			});
+		}
+
+		photo.addEventListener("click", () => {
+			filters.forEach(filter => {
+				photo.classList.remove(filter);
+			});
+		});
+	</script>
+</body>
+
+</html>
